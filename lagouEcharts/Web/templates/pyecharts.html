@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Proudly presented by ECharts</title>
+    {% for jsfile_name in script_list %}
+        <script src="{{ host }}/{{ jsfile_name }}.js"></script>
+    {% endfor %}
+</head>
+
+<body>
+<a href="http://127.0.0.1:5000/">首页</a>
+<a href="http://127.0.0.1:5000/wordcloud">词云</a>
+
+<a href="http://127.0.0.1:5000/jobClass">分类</a>
+<a href="http://127.0.0.1:5000/jishu">技术</a>
+<a href="http://127.0.0.1:5000/chanpin">产品</a>
+<a href="http://127.0.0.1:5000/sheji">设计</a>
+<a href="http://127.0.0.1:5000/yunying">运营</a>
+<a href="http://127.0.0.1:5000/shichang_xiaoshou">市场与销售</a>
+<a href="http://127.0.0.1:5000/zhineng">职能</a>
+<a href="http://127.0.0.1:5000/jinrong">金融</a>
+
+<a href="http://127.0.0.1:5000/houduankaifa">后端开发</a>
+<a href="http://127.0.0.1:5000/rengongzhineng">人工智能</a>
+<a href="http://127.0.0.1:5000/python">python</a>
+
+<a href="http://127.0.0.1:5000/salary/shanghai">上海</a>
+<a href="http://127.0.0.1:5000/salary/beijing">北京</a>
+<a href="http://127.0.0.1:5000/salary/chengdu">成都</a>
+<a href="http://127.0.0.1:5000/salary/shenzhen">深圳</a>
+<a href="http://127.0.0.1:5000/salary/hangzhou">杭州</a>
+<a href="http://127.0.0.1:5000/salary/guangzhou">广州</a>
+<a href="http://127.0.0.1:5000/salary/nanjing">南京</a>
+<a href="http://127.0.0.1:5000/salary/wuhan">武汉</a>
+<a href="http://127.0.0.1:5000/salary/xian">西安</a>
+  {{ myechart|safe }}
+</body>
+
+</html>
